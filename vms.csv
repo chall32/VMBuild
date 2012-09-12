@@ -1,0 +1,2 @@
+basevm,datastore,vmhost,custspec,vmname,memoryGB,cpus,ipaddress,subnet,gateway,pdns,sdns,portgroup,DdrivesizeGB,EdrivesizeGB,FdrivesizeGB,description
+WIN2K8-TEMPLATE,SHARED-LUN003,esxihost001,Win2k8_Customisation,ZZZTESTVM,2,1,192.168.0.22,255.255.255.0,192.168.0.1,192.168.0.1,8.8.8.8,VM Network,10,20,30,I am a Test VM - Please delete me
