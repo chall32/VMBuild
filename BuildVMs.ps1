@@ -2,7 +2,7 @@
 # BuildVMs.ps1
 # Jase McCarty 6/5/2010 - http://www.jasemccarty.com/blog/?p=765
 #
-# v1.0  - 05 Sept 2012 - Chris Hall - Major Tweaking, VM recifiguration added, D:\ Drive creation
+# v1.0  - 05 Sept 2012 - Chris Hall - Major Tweaking, VM reconfiguration added, D:\ Drive creation
 # v1.1  - 12 Sept 2012 - Chris Hall - E:\ , F:\ Drive creation, better variable handling
 #
 #----------------------------------------------------------------------------------------------------
@@ -23,8 +23,6 @@ $DNSSecondary = "8.8.8.8"
 
 #----------------------------------------------------------------------------------------------------
 Set-PowerCLIConfiguration -InvalidCertificateAction:Ignore -Confirm:$False
-Import-Module C:\Scripts\CheckForDVSIssueWithNoVDSSnapin.ps1
-
 connect-VIserver -Server $VIServer -User $VIUser -Pass $VIPass
 cls 
 
